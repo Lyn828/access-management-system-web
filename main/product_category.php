@@ -112,12 +112,13 @@ $categories = $stmt->fetchAll();
   <!-- Scoped Styles -->
   <style>
   #product-category-page {
-    --primary-color: #1B263B;
-    --secondary-color: #415A77;
-    --accent-color: #778DA9;
-    --danger-color: #dc2626;
-    --bg-gradient-start: #A6C0D6; /* Light blue shade */
-    --bg-gradient-end: #F0F4F8; /* Soft light color */
+    #product-category-page 
+    --primary-color: #2C3E50; 
+    --secondary-color: #34495E; 
+    --accent-color: #5D6D7E;
+    --danger-color: #E74C3C; 
+    --bg-gradient-start: #ECF0F1; 
+    --bg-gradient-end: #FFFFFF;
   }
 
   #product-category-page body {
@@ -141,7 +142,7 @@ $categories = $stmt->fetchAll();
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e5e7eb;
+    border: 1px solid #e0e0e0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
@@ -152,6 +153,7 @@ $categories = $stmt->fetchAll();
 
   #product-category-page .category-card h4 {
     color: var(--primary-color);
+    font-weight: bold;
   }
 
   #product-category-page .btn-primary {
@@ -170,8 +172,8 @@ $categories = $stmt->fetchAll();
   }
 
   #product-category-page .btn-danger:hover {
-    background-color: #e53935;
-    border-color: #e53935;
+    background-color: #C0392B;
+    border-color: #C0392B;
   }
 
   #product-category-page .btn-secondary {
@@ -196,6 +198,9 @@ $categories = $stmt->fetchAll();
     transform: translate(-50%, -50%);
     z-index: 1055;
     border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 1rem;
   }
 </style>
 </head>
