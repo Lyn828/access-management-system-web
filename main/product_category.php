@@ -121,35 +121,48 @@ $categories = $stmt->fetchAll();
     --bg-gradient-end: #FFFFFF;
   }
 
-  #product-category-page body {
-    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
-    background-size: cover;
-    background-position: center;
-    padding: 20px 0;
-  }
+  #product-category-page {
+  --primary-color: #2C3E50;
+  --secondary-color: #34495E;
+  --accent-color: #5D6D7E;
+  --danger-color: #E74C3C;
+  --bg-gradient-start: #dfe6e9;
+  --bg-gradient-end: #ffffff;
+}
 
-  #product-category-page .main-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+#product-category-page body {
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+}
 
-  #product-category-page .category-card {
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
 
-  #product-category-page .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  }
+#product-category-page .main-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+
+#product-category-page .category-card {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#product-category-page .category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
 
   #product-category-page .category-card h4 {
     color: var(--primary-color);
