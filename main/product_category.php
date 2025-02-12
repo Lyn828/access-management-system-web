@@ -120,16 +120,6 @@ $categories = $stmt->fetchAll();
     --bg-gradient-start: #ECF0F1; 
     --bg-gradient-end: #FFFFFF;
   }
-
-  #product-category-page {
-  --primary-color: #2C3E50;
-  --secondary-color: #34495E;
-  --accent-color: #5D6D7E;
-  --danger-color: #E74C3C;
-  --bg-gradient-start: #dfe6e9;
-  --bg-gradient-end: #ffffff;
-}
-
 #product-category-page body {
   background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
   background-size: cover;
